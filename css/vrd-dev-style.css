@@ -1,0 +1,5 @@
+#ajaxBusy,
+#accountAjaxBusy,
+.ajax-content-loader {
+  display: none !important;
+}
