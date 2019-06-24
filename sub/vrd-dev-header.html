@@ -1,0 +1,1661 @@
+<header class="header__container">
+
+    <button onclick="closeCart()" class="checkout-cart-link checkout-cart-close d-none teste">Continuar</button>
+    <div class="lente" style="background-color:transparent;"></div>
+    <div class="heander-pricipal__content">
+        <div class="header__info--box">
+            <ul class="header__info--list">
+                <li class="header__info-item">
+                    <a href="tel:+551139727000" class="header__info-link">
+                        <span>Central de atendimento: </span>(11) 3972-7000
+                    </a>
+                </li>
+                <li class="header__info-item">
+                    <a href="/sobre" class="header__info-link">Quem somos</a>
+                </li>
+                <li class="header__info-item">
+                    <a href="/account/orders" class="header__info-link">Meus pedidos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-principal__box">
+  
+            <div class="header-title__box">
+                <div class="header-btn-nav header-btn-nav__mb"><span></span></div>
+                <h1 class="header-title">
+                    <a href="/">Variado</a>
+                </h1>
+                <div class="header__item mini-cart-class mini-cart__mobile d-lg-none">
+                    <vtex.cmc:AmountItemsInCart/>
+                    <vtex.cmc:miniCart/>
+                    <script>
+                        // document.getElementById('#checkoutClose').click(function (params) {
+                        //     $('.v2-vtexsc-cart').removeClass('show');
+                        //     console.log('fechar checkout');
+                        // });
+  
+                        function closeCart() {
+                            var cartMobile = document.getElementsByClassName("v2-vtexsc-cart");
+                            cartMobile.classList.remove("show");
+                        };
+                        
+                        
+                    </script>
+                    <button class="checkout-cart-link checkout-cart-close">Continuar Comprando</button>
+                </div>
+            </div>
+  
+            <div class="header-btn-nav header-btn-nav__desk">
+                <span>Categorias</span>
+            </div>
+  
+            <div class="search">
+                <div class="search-control">
+                    <vtex.cmc:fullTextSearchBox/>
+                </div>
+            </div>
+  
+            <ul class="header__links">
+                <li class="header__item">
+                    <a href="/account" class="header__link header__link--account">Acessar conta</a>
+                </li>
+  
+                <li class="header__item mini-cart-class mini-cart__desktop d-none d-lg-flex">
+                    <vtex.cmc:AmountItemsInCart/>
+                    <vtex.cmc:miniCart/>
+                    <div class="empyt-cart">
+                        <span class="empyt-text">Carrinho Vazio</span>
+                    </div>
+                </li>
+            </ul>
+  
+            <nav class="header__menu">
+                <div class="my-account__mobile">
+                    <a href="/account" class="header__link header__link--account">Acessar conta</a>
+                </div>
+  
+                <!-- Departamentos -->
+                <ul class="menu-departament__list">
+                
+                
+            
+                        <!-- DEP Filmes e Séries arquivos/icons8-claquete-filled-24 (1).png -->
+                        <li class="menu-departament__item-box menu-departament__item-box--filmes menu-departament__title--filmes" onmouseover="this.style.textShadow='0.0em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'" >
+                            <img style="margin-top:8%; margin-left:-51%;" src="https://img.icons8.com/ios/24/000000/clapperboard.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/clapperboard-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/clapperboard.png'">
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-top:11%; margin-left:21%;" class="menu-departament__title--filmes">Filmes e Séries</h2></img>
+                        </li>
+                        <br/>
+     
+                        <!-- DEP Consoles e Games -->
+                        <li class="menu-departament__item-box menu-departament__item-box--games menu-departament__title--games" style="display:block; margin-top:-6%;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style=" margin-top:4%; margin-left:-59.5%;" src="https://img.icons8.com/ios/24/000000/controller.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/controller-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/controller.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:21%; margin-top:8%;" class=" menu-departament__title--games">Consoles e Games</h2>
+                        </li>
+                        <br/>
+  
+  
+                        <!-- DEP Informatica -->
+                        <li class="menu-departament__item-box menu-departament__item-box--informatica menu-departament__title--informatica" style="margin-top:-4%;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style=" margin-top:7%; margin-left:-43%;" src="https://img.icons8.com/ios/22/000000/usb-memory-stick.png" onmouseover="this.src='https://img.icons8.com/ios/22/000000/usb-memory-stick-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/22/000000/usb-memory-stick.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:21%; margin-top:7%;" class="menu-departament__title--informatica">Informatica</h2>
+                        </li>
+                        <br/>
+  
+  
+                        <!-- DEP Eletrônicos -->
+                        <li class="menu-departament__item-box menu-departament__item-box--eletronicos menu-departament__title--eletronicos" style="margin-top:-12%;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style=" margin-top:12%; margin-left:-43%;" src="https://img.icons8.com/ios/24/000000/generic-mouse.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/generic-mouse-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/generic-mouse.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:21%; margin-top:13%;" class="menu-departament__title--eletronicos">Eletrônicos</h2>
+                        </li>
+                        <br/>
+  
+                        <!-- DEP Telefonia -->
+                        <li class="menu-departament__item-box menu-departament__item-box--telefonia menu-departament__title--telefonia" style="margin-top:-11%;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style=" margin-top:11%; margin-left:-36%;" src="https://img.icons8.com/ios/24/000000/phonelink-ring.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/phonelink-ring-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/phonelink-ring.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:21%; margin-top:14%;" class="menu-departament__title--telefonia">Telefonia</h2>
+                        </li>
+                        <br/>   
+    
+                        <!-- DEP Higiene e Limpeza -->
+                        <li class="menu-departament__item-box menu-departament__item-box--higiene-limpeza menu-departament__title--higiene-limpeza" style="margin-top:-11%; width:240px; heigth:51px;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style=" margin-top:13%; margin-left:-59%;" src="https://img.icons8.com/ios/24/000000/toilet-paper.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/toilet-paper-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/toilet-paper.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:21%; margin-top:14%;" class="menu-departament__title--higiene-limpeza">Higiene e Limpeza</h2>
+                        </li>
+                        <br/>
+  
+                        <!-- DEP Utilidades Domésticas -->
+                        <li class="menu-departament__item-box menu-departament__item-box--utilidades-domesticas menu-departament__title--utilidades-domesticas" style="margin-top:-6%; width:240px; heigth:51px;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style=" margin-top:5%; margin-left:-71%;" src="https://img.icons8.com/ios/24/000000/kitchen.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/kitchen-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/kitchen.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:21%; margin-top:9%;" class="menu-departament__title--utilidades-domesticas">Utilidades Domésticas</h2>
+                        </li>
+                        <br/>
+  
+                        <!-- DEP Descartáveis -->
+                        <li class="menu-departament__item-box menu-departament__item-box--variedades menu-departament__title--variedades"  onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style="margin-left:-46%; margin-top:-3%;" src="https://img.icons8.com/ios/24/000000/coffee-to-go.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/coffee-to-go-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/coffee-to-go.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:20%; margin-top:3%;" class="menu-departament__title--variedades">Descartáveis</h2>
+                        </li>
+                        <br/>
+                        
+                        <!-- Alimentos -->
+                        <li class="menu-departament__item-box menu-departament__item-box--midia menu-departament__title--midia" style="margin-top:-4%; width:240px; heigth:51px;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                            <img style="margin-left:-41%; margin-top:3%;" src="https://img.icons8.com/ios/27/000000/tableware.png" onmouseover="this.src='https://img.icons8.com/ios/27/000000/tableware-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/27/000000/tableware.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:22%; margin-top:7%;" class="menu-departament__title--midia">Alimentos</h2>
+                        </li>
+                        <br/>
+  
+                        <!-- DEP Copa -->
+                        <li class="menu-departament__item-box menu-departament__item-box--musica menu-departament__title--musica" style="margin-top:-4%;" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" 
+                        onmouseout="this.style.textShadow='none'">
+                            <img style="margin-left:-25%; margin-top:2%;" src="https://img.icons8.com/ios/24/000000/espresso-cup.png" onmouseover="this.src='https://img.icons8.com/ios/24/000000/espresso-cup-filled.png'" onmouseout="this.src='https://img.icons8.com/ios/24/000000/espresso-cup.png'"></img>
+                            <h2 style="color: inherit; font-family: Lato, sans-serif; float: left; font-size:14px; font-weight: bold; margin-left:21%; margin-top:4%;" class="menu-departament__title--musica">Copa</h2>
+                        </li>
+    
+  
+                    
+                   
+                 
+                </ul>
+  
+                <!-- Categorias -->
+                
+                
+                
+                
+                
+                
+                
+                
+               
+  
+                <!-- CAT Filmes e Séries-->
+                <div class="menu-category__box menu-category__box--filmes" >
+                    <div class="menu-category__content-box">
+  
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+  
+                            <!-- DVD -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/filmes-e-series/dvd/">DVD</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/acao" class="menu-sub-category__link">Ação</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/animacao" class="menu-sub-category__link">Animação</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/aventura" class="menu-sub-category__link">Aventura</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/biblico" class="menu-sub-category__link">Bíblico</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/comedia" class="menu-sub-category__link">Comédia</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/drama" class="menu-sub-category__link">Drama</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/guerra" class="menu-sub-category__link">Guerra</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/infantil" class="menu-sub-category__link">Infantil</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/musical" class="menu-sub-category__link">Musical</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/romance" class="menu-sub-category__link">Romance</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/seriado" class="menu-sub-category__link">Seriado</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/dvd/terror" class="menu-sub-category__link">Terror</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/filmes-e-series/dvd" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em DVDs</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                            <!-- Blu-ray -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/filmes-e-series/blu-ray/">Blu-Ray</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/ação" class="menu-sub-category__link">Ação</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/animacao" class="menu-sub-category__link">Animação</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/aventura" class="menu-sub-category__link">Aventura</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/comedia" class="menu-sub-category__link">Comédia</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/drama" class="menu-sub-category__link">Drama</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/ficção" class="menu-sub-category__link">Ficção</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/musical" class="menu-sub-category__link">Musical</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/romance" class="menu-sub-category__link">Romance</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/seriado" class="menu-sub-category__link">Seriado</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/suspense" class="menu-sub-category__link">Suspense</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray/terror" class="menu-sub-category__link">Terror</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/filmes-e-series/blu-ray" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em BLU-RAYs</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                            <!-- Blu-Ray 3D -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/filmes-e-series/blu-ray-3d/">Blu-Ray 3D</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                 
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray-3d/ação" class="menu-sub-category__link">Ação</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray-3d/animação" class="menu-sub-category__link">Animação</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray-3d/aventura" class="menu-sub-category__link">Aventura</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/filmes-e-series/blu-ray-3d/ficção" class="menu-sub-category__link">Ficção</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/filmes-e-series/blu-ray-3d/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em BLU-RAYs 3D</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                        </div>
+  
+                        <div class="menu-category__footer" style="top: 500px">
+                            <a href="/filmes-e-series/" class="menu-category__link">Tudo de
+                                <span>Filmes e Séries</span>
+                            </a>
+                        </div>
+  
+                    </div>
+                    <!-- <div class="menu-category__banner-box"> -->
+                    <!-- <a href="">
+                            <img src="/arquivos/departament-banner.jpg" alt="" class="menu-category__banner-img" />
+                        </a> -->
+                    <!-- </div> -->
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+  
+                <!-- CAT Consoles e Games -->
+                <div class="menu-category__box menu-category__box--games" >
+  
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+  
+                            <!-- Jogos -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/consoles-e-games/jogos/">Jogos</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/jogos/ps4" class="menu-sub-category__link">PS4</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/jogos/ps3" class="menu-sub-category__link">PS3</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/jogos/xbox-360" class="menu-sub-category__link">Xbox 360</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/jogos/xbox-one" class="menu-sub-category__link">Xbox One</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/jogos/Nintendo" class="menu-sub-category__link">Nintendo</a>
+                                    </li>
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/consoles-e-games/jogos/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Jogos</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                            <!-- Consoles -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="">Consoles</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/consoles/ps4" class="menu-sub-category__link">PS4</a>
+                                    </li>
+                                    <!-- <li class="menu-sub-category__item">
+                                        <a href="/consoles-e-games/consoles/ps3" class="menu-sub-category__link">PS3</a>
+                                    </li> -->
+                                    <!-- <li class="menu-sub-category__item">
+                                        <a href="/consoles-e-games/consoles/xbox-360" class="menu-sub-category__link">Xbox 360</a>
+                                    </li> -->
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/consoles/xbox-one" class="menu-sub-category__link">Xbox One</a>
+                                    </li>
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/consoles-e-games/consoles/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Consoles</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                            <!-- Acessórios -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/consoles-e-games/acessorios/">Acessórios</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/acessorios/ps4" class="menu-sub-category__link">PS4</a>
+                                    </li>
+                                    <!-- <li class="menu-sub-category__item">
+                                        <a href="/consoles-e-games/acessorios/ps3" class="menu-sub-category__link">PS3</a>
+                                    </li>
+                                    <li class="menu-sub-category__item">
+                                        <a href="/consoles-e-games/acessorios/xbox-360" class="menu-sub-category__link">Xbox 360</a>
+                                    </li>
+                                    <li class="menu-sub-category__item">
+                                        <a href="/consoles-e-games/acessorios/xbox-one" class="menu-sub-category__link">Xbox One</a>
+                                    </li> -->
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/acessorios/pc" class="menu-sub-category__link">PC</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/consoles-e-games/acessorios/nintendo" class="menu-sub-category__link">Nintendo</a>
+                                    </li>
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/consoles-e-games/acessorios/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Acessórios</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                            <!-- Coleções -->
+                            <!-- <div class="menu-clusters__col">
+                                <a href="" class="menu-clusters__link">Lançamentos</a>
+                                <a href="" class="menu-clusters__link">Pré-venda</a>
+                                <a href="" class="menu-clusters__link">Promoção</a>
+                            </div> -->
+  
+                        </div>
+  
+                        <div class="menu-category__footer">
+                            <a href="/consoles-e-games/" class="menu-category__link">Tudo de
+                                <span>Consoles e Games</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                <!-- CAT COPA -->
+                <div class="menu-category__box menu-category__box--musica">
+                    <div class="menu-category__content-box">
+                        <span id="back" class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+  
+                           <!-- Cafés -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/copa/cafes">Cafés</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/copa/cafes/cafe-em-capsula" class="menu-sub-category__link">Café em Capsula</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/copa/cafes/cafe-em-po" class="menu-sub-category__link">Café em Pó</a>
+                                    </li>
+                                 
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/copa/cafes" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Cafés</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+  
+                            </div>
+                            
+                            
+                            
+                            <!-- Leites -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/copa/leites/">Leites</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/copa/leites/leite-integral" class="menu-sub-category__link">Leite Integral</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/copa/leites/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Leites</span>
+                                        </a>
+                                    </li>
+                                 
+                                </ul>
+  
+                            </div>
+                            
+                            <!-- Açucares e Adoçantes -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/copa/açucares-e-adoçantes/">Açucares e Adoçantes</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/copa/açucares-e-adoçantes/adoçantes" class="menu-sub-category__link">Adoçantes</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/copa/açucares-e-adoçantes/açucar-refinado" class="menu-sub-category__link">Açúcar Refinado</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/copa/açucares-e-adoçantes/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Açucares e Adoçantes</span>
+                                        </a>
+                                    </li>
+                                 
+                                </ul>
+  
+                            </div>
+  
+                        </div>
+  
+                        <div class="menu-category__footer">
+                            <a href="/copa/" class="menu-category__link">Tudo de
+                                <span>Copa</span>
+                            </a>
+                        </div>
+                    </div>
+  
+                </div>
+  
+                
+             
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- CAT Descartáveis -->
+                <div class="menu-category__box menu-category__box--variedades">
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+  
+                            <!-- Copos -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/descartaveis/copos-descartaveis">Copos</a>
+                                </h3>
+  
+                                 <!-- Categorias -->
+                        
+                                 <ul class="menu-sub-category__list"> 
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/copos-descartaveis/180ml" class="menu-sub-category__link">180ml</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/copos-descartaveis/360ml" class="menu-sub-category__link">360ml</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/copos-descartaveis/400ml" class="menu-sub-category__link">400ml</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/copos-descartaveis/500ml" class="menu-sub-category__link">500ml</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/copos-descartaveis/700ml" class="menu-sub-category__link">700ml</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/copos-descartaveis/70ml" class="menu-sub-category__link">70ml</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/descartaveis/copos-descartaveis" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Copos</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                            
+                            
+                            <!-- Potes e Tigelas -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/descartaveis/potes-tigelas/">Potes e Tigelas</a>
+                                </h3>
+  
+                                 <!-- Categorias temperos-e-condimentos-->
+                        
+                                 <ul class="menu-sub-category__list"> 
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/potes-tigelas/120ml" class="menu-sub-category__link">120ml</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/potes-tigelas/180ml" class="menu-sub-category__link">180ml</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/potes-tigelas/360ml" class="menu-sub-category__link">360ml</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/potes-tigelas/480ml" class="menu-sub-category__link">480ml</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/descartaveis/potes-tigelas/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Potes e Tigelas</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+  
+                            </div>
+                            
+                             <!-- Tampas -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/descartaveis/tampas/">Tampas</a>
+                                </h3>
+  
+                                 <!-- Categorias Tampas-->
+                        
+                                 <ul class="menu-sub-category__list"> 
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/tampas/tampas-com-respirador" class="menu-sub-category__link">Tampas com Respirador</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/descartaveis/tampas/tampas-sem-respirador" class="menu-sub-category__link">Tampas sem Respirador</a>
+                                    </li>
+                                  
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/descartaveis/tampas" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Tampas</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                            
+    
+                        </div>
+  
+                        <div class="menu-category__footer">
+                            <a href="/descartaveis/" class="menu-category__link">Tudo de
+                                <span>Descartáveis</span>
+                            </a>
+                        </div>
+                    </div>
+  
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+  
+  
+  
+                
+  
+                
+  
+                <!-- CAT Higiene e Limpeza -->
+                <div class="menu-category__box menu-category__box--higiene-limpeza">
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+  
+                            
+                            <!-- Higienização das Mãos -->
+                            <div class="menu-category__col">
+  
+                                <h3 class="menu-category__title">
+                                    <a href="/higiene-e-limpeza/higienizacao-das-maos/">Higienização das Mãos</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/higienizacao-das-maos/sabonetes---sabao" class="menu-sub-category__link">Sabonetes / Sabão</a>
+                                    </li>
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/higiene-e-limpeza/higienizacao-das-maos" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Higienização das Mãos</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                
+                                <!-- Químicos para Limpeza -->
+                                <h3 class="menu-category__title">
+                                    <a href="">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza">Químicos para Limpeza</a>
+                                    </a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+  
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza/agua-sanitaria" class="menu-sub-category__link">Água Sanitária</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza/cloro" class="menu-sub-category__link">Cloro</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza/desinfetantes" class="menu-sub-category__link">Desinfetantes</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza/detergentes" class="menu-sub-category__link">Detergentes</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza/limpa-pisos" class="menu-sub-category__link">Limpa Pisos</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza/multiuso" class="menu-sub-category__link">Multiuso</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/higiene-e-limpeza/quimicos-para-limpeza" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Químicos para Limpeza</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                            <!-- Acessórios para Limpeza -->
+                            <div class="menu-category__col">
+  
+                                <h3 class="menu-category__title">
+                                    <a href="/higiene-e-limpeza/acessorios-para-limpeza/">Acessórios para Limpeza</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/acessorios-para-limpeza/esponjas" class="menu-sub-category__link">Esponjas</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/acessorios-para-limpeza/odorizadores" class="menu-sub-category__link">Odorizadores</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/acessorios-para-limpeza/sacos-de-lixo" class="menu-sub-category__link">Sacos de Lixo</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/acessorios-para-limpeza/suportes---display" class="menu-sub-category__link">Suportes / Display</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/higiene-e-limpeza/acessorios-para-limpeza/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Acessórios para Limpeza</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                                  
+                            </div>
+                            
+                             <!-- Papéis -->
+                            <div class="menu-category__col">
+  
+                                <h3 class="menu-category__title">
+                                    <a href="/higiene-e-limpeza/papeis/">Papéis</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/papeis/guardanapos" class="menu-sub-category__link">Guardanapos</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/papeis/lenços-umedecidos" class="menu-sub-category__link">Lenços Umedecidos</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/papeis/papeis-higienicos" class="menu-sub-category__link">Papéis Higiênicos</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/papeis/papel-interfolha" class="menu-sub-category__link">Papel Interfolha</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/higiene-e-limpeza/papeis/papel-toalha" class="menu-sub-category__link">Papel Toalha</a>
+                                    </li>
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/higiene-e-limpeza/papeis/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Papéis</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+  
+                        </div>
+  
+                        <div class="menu-category__footer" style="top: 450px">
+                            <a href="/higiene-e-limpeza/" class="menu-category__link">Tudo de
+                                <span>Higiene e Limpeza</span>
+                            </a>
+                        </div>
+  
+                    </div>
+  
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+  
+                <!-- CAT Utilidades Domésticas -->
+                <div class="menu-category__box menu-category__box--utilidades-domesticas">
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+  
+                            <!-- Cozinha -->
+                            <div class="menu-category__col">
+  
+                                <h3 class="menu-category__title">
+                                    <a href="/utilidades-domesticas/cozinha/">Cozinha</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/cozinha/acessorios-de-cozinha" class="menu-sub-category__link">Acessórios de Cozinha</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/cozinha/garrafas-termicas" class="menu-sub-category__link">Garrafas Térmicas</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/cozinha/panelas" class="menu-sub-category__link">Panelas</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/cozinha/talheres" class="menu-sub-category__link">Talheres</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/utilidades-domesticas/cozinha" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Cozinha</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                
+                                <h3 class="menu-category__title">
+                                    <a href="/utilidades-domesticas/eletroportateis/">Eletroportáteis</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/eletroportateis/pipoqueiras" class="menu-sub-category__link">Pipoqueiras</a>
+                                    </li>
+                                   
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/utilidades-domesticas/eletroportateis" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Eletroportáteis</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                            
+                            
+                            
+                            <!-- Cozinha -->
+                            <div class="menu-category__col">
+  
+                                <h3 class="menu-category__title">
+                                    <a href="/utilidades-domesticas/utilidades-de-mesa/">Utilidades de Mesa</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/utilidades-de-mesa/açucareiros" class="menu-sub-category__link"> Açucareiros</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/utilidades-de-mesa/bandejas" class="menu-sub-category__link">Bandejas</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/utilidades-de-mesa/manteigueiras" class="menu-sub-category__link">Manteigueiras</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/utilidades-de-mesa/porta-guardanapos" class="menu-sub-category__link">Porta Guardanapos</a>
+                                    </li>
+                                    
+                            
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/utilidades-domesticas/utilidades-de-mesa/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Utilidades de Mesa</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                
+                                <h3 class="menu-category__title">
+                                    <a href="">
+                                        <a href="/utilidades-domesticas/bar">Bar</a>
+                                    </a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+  
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/bar/acessorios-de-bar" class="menu-sub-category__link">Acessórios de Bar</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/bar/baldes" class="menu-sub-category__link">Baldes</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/bar/porta-garrafa" class="menu-sub-category__link">Porta Garrafa</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/utilidades-domesticas/bar" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Bar</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                          
+                            </div>
+  
+  
+                            <!--- Banheiro -->
+                            <div class="menu-category__col">
+  
+                                <h3 class="menu-category__title">
+                                    <a href="/utilidades-domesticas/banheiro">Banheiro</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/banheiro/acessorios-de-banheiro" class="menu-sub-category__link">Acessórios de Banheiro</a>
+                                    </li>
+                                    
+                                   <!-- <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/banheiro/saboneteira" class="menu-sub-category__link">Saboneteiras</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/banheiro/toalheiras" class="menu-sub-category__link">Toalheiras</a>
+                                    </li> -->
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/banheiro/vassouras-e-escovas-sanitarias" class="menu-sub-category__link">Vassouras e Escovas Sanitárias</a>
+                                    </li>
+  
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/utilidades-domesticas/banheiro" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Banheiro</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                
+                                <h3 class="menu-category__title">
+                                    <a href="/utilidades-domesticas/limpeza-e-lavanderia">Limpeza e lavanderia</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/limpeza-e-lavanderia/escova" class="menu-sub-category__link">Escova</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/utilidades-domesticas/limpeza-e-lavanderia/lixeiras" class="menu-sub-category__link">Lixeiras</a>
+                                    </li>
+                                   
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/utilidades-domesticas/limpeza-e-lavanderia" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Limpeza e lavanderia</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                                
+                            </div>
+  
+                        </div>
+  
+                        <div class="menu-category__footer">
+                            <a href="/utilidades-domesticas/" class="menu-category__link">Tudo de
+                                <span>Utilidades Domésticas</span>
+                            </a>
+                        </div>
+  
+                    </div>
+  
+                </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                <!-- CAT Eletrônicos -->
+                <div class="menu-category__box menu-category__box--eletronicos">
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+                        
+                        
+                            <!-- Acessórios -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/eletronicos/acessorios/">Acessórios</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/eletronicos/acessorios/carregador-e-bateria" class="menu-sub-category__link">Carregador e Bateria</a>
+                                    </li>
+                                
+                                
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/eletronicos/acessorios/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Acessórios</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                            <!-- Audio -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/eletronicos/audio/">Áudio</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/eletronicos/audio/caixas-de-som/" class="menu-sub-category__link">Caixas de Som</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/eletronicos/audio/fones-e-headphones/" class="menu-sub-category__link">Fones e Headphones</a>
+                                    </li>
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/eletronicos/audio/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Áudio</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                            <!-- Dvd Player -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/eletronicos/tv-e-home-theater/">Tv e Home Theater</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/eletronicos/tv-e-home-theater/dvd-player-conversor" class="menu-sub-category__link">DVD Player/Conversor</a>
+                                    </li>
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/eletronicos/dvd-player/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em DVD Player</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                        </div>
+  
+                        <div class="menu-category__footer">
+                            <a href="/eletronicos/" class="menu-category__link">Tudo de
+                                <span>Eletrônicos</span>
+                            </a>
+                        </div>
+  
+                    </div>
+  
+                </div>
+                
+                
+                
+                
+                
+                
+  
+                <!-- CAT Telefonia -->
+                <div class="menu-category__box menu-category__box--telefonia">
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+                        
+                            <!-- Acessórios de Telefonia -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/telefonia/acessorios-de-telefonia/">Acessórios de Telefonia</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/telefonia/acessorios-de-telefonia/capa-para-celular" class="menu-sub-category__link">
+                                            <span>Capa para Celular</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/telefonia/acessorios-de-telefonia/carregador-de-celular" class="menu-sub-category__link">
+                                            <span>Carregador de Celular</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/telefonia/acessorios-de-telefonia/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Acessórios de Telefonia</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                        
+  
+                            <!-- Smartphones -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/telefonia/smartphones/">Smartphones</a>
+                                </h3>
+  
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/telefonia/smartphones/samsung" class="menu-sub-category__link">
+                                            <span>Samsung</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/telefonia/smartphones/motorola" class="menu-sub-category__link">
+                                            <span>Motorola</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/telefonia/smartphones/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Smartphones</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+  
+                            <!-- Coleções -->
+                            <!-- <div class="menu-clusters__col">
+                                <a href="" class="menu-clusters__link">Lançamento</a>
+                                <a href="" class="menu-clusters__link">promoção</a>
+                                <a href="" class="menu-clusters__link">Mais vendidos</a>
+                            </div> -->
+  
+                        </div>
+  
+                        <div class="menu-category__footer">
+                            <a href="/telefonia/" class="menu-category__link">Tudo de
+                                <span>Telefonia</span>
+                            </a>
+                        </div>
+  
+                    </div>
+  
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+  
+                <!-- CAT Informatica -->
+                <div class="menu-category__box menu-category__box--informatica">
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+                
+                        <div class="menu-category__row">
+                
+                            <!-- Mouses -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/informatica/mouses/">Mouses</a>
+                                </h3>
+                
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <!-- <li class="menu-sub-category__item">
+                                        <a href="/informatica/smartphones/samsung" class="menu-sub-category__link">
+                                            <span>Samsung</span>
+                                        </a>
+                                    </li> -->
+                                    
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/informatica/Mouses/mouse-com-fio" class="menu-sub-category__link">Mouse com Fio</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/informatica/Mouses/mouse-gamer" class="menu-sub-category__link">Mouse Gamer</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/informatica/Mouses/mouse-sem-fio" class="menu-sub-category__link">Mouse sem Fio</a>
+                                    </li>
+                                    
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/informatica/Mouses/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Mouses</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                
+                            </div>
+  
+                            <!-- Teclados -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/informatica/teclados/">Teclados</a>
+                                </h3>
+                            
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <!-- <li class="menu-sub-category__item">
+                                        <a href="/informatica/smartphones/samsung" class="menu-sub-category__link">
+                                            <span>Samsung</span>
+                                        </a>
+                                    </li> -->
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/informatica/teclados/teclado-com-fio" class="menu-sub-category__link">Teclado com Fio</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/informatica/teclados/teclado-sem-fio" class="menu-sub-category__link">Teclado sem Fio</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/informatica/teclados/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Teclados</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+  
+                            <!-- Acessórios -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/informatica/acessorios-de-informatica/">Acessórios de Informática</a>
+                                </h3>
+                            
+                                <!-- Sub Categorias -->
+                                <ul class="menu-sub-category__list">
+                                    <!-- <li class="menu-sub-category__item">
+                                        <a href="/informatica/smartphones/samsung" class="menu-sub-category__link">
+                                            <span>Samsung</span>
+                                        </a>
+                                    </li> -->
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/informatica/acessorios-de-informatica/cabos-de-computador" class="menu-sub-category__link">Cabos de Computador</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/informatica/acessorios-de-informatica/pen-drive" class="menu-sub-category__link">Pen Driver</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/informatica/acessorios-de-informatica/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Acessórios de Informática</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                
+                            <!-- Coleções -->
+                            <!-- <div class="menu-clusters__col">
+                                                <a href="" class="menu-clusters__link">Lançamento</a>
+                                                <a href="" class="menu-clusters__link">promoção</a>
+                                                <a href="" class="menu-clusters__link">Mais vendidos</a>
+                                            </div> -->
+                
+                        </div>
+                
+                        <div class="menu-category__footer">
+                            <a href="/telefonia/" class="menu-category__link">Tudo de
+                                <span>Informatica</span>
+                            </a>
+                        </div>
+                
+                    </div>
+                
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <!-- CAT Alimentos -->
+                <div class="menu-category__box menu-category__box--midia">
+                    <div class="menu-category__content-box">
+                        <span class="menu-btn-back">Voltar</span>
+  
+                        <div class="menu-category__row">
+  
+                            <!-- Aperitivos Salgado -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/alimento/aperitivos-salgados/">Aperitivos Salgados</a>
+                                </h3>
+  
+                                 <!-- Categorias -->
+                        
+                                 <ul class="menu-sub-category__list"> 
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/aperitivos-salgados/biscoitos-doces" class="menu-sub-category__link">Biscoitos Doces</a>
+                                    </li>
+                                    
+                                   
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/alimento/aperitivos-salgados/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Aperitivos Salgados</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                            
+                            
+                            <!-- Doces -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/alimento/doces/">Doces</a>
+                                </h3>
+  
+                                 <!-- Categorias temperos-e-condimentos-->
+                        
+                                 <ul class="menu-sub-category__list"> 
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/doces/balas" class="menu-sub-category__link">Balas</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/doces/bombons" class="menu-sub-category__link">Bombons</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/doces/chicletes-e-gomas-de-mascar" class="menu-sub-category__link">Chicletes e Gomas de Mascar</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/doces/misturas-de-bolo" class="menu-sub-category__link">Mistura de Bolo</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/doces/sem-gluten" class="menu-sub-category__link">Sem Glúten</a>
+                                    </li>
+                                   
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/alimento/doces/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Doces</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                             <!-- Temperos e Condimentos -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/alimento/temperos-e-condimentos/">Temperos e Condimentos</a>
+                                </h3>
+  
+                                 <!-- Categorias temperos-e-condimentos-->
+                        
+                                 <ul class="menu-sub-category__list"> 
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/temperos-e-condimentos/azeites" class="menu-sub-category__link">Azeites</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/temperos-e-condimentos/barbecue" class="menu-sub-category__link">Barbecue</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/temperos-e-condimentos/fermento-quimico" class="menu-sub-category__link">Fermento Químico</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/temperos-e-condimentos/ketchup" class="menu-sub-category__link">Ketchup</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/temperos-e-condimentos/maionese" class="menu-sub-category__link">Maionese</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/temperos-e-condimentos/mostarda" class="menu-sub-category__link">Mostarda</a>
+                                    </li>
+                                   <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/temperos-e-condimentos/vinagres" class="menu-sub-category__link">Vinagre</a>
+                                    </li>
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/alimento/temperos-e-condimentos/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Temperos e Condimentos</span>
+                                        </a>
+                                    </li>
+                                </ul>
+  
+                            </div>
+                            
+                            
+                            
+                            <!-- Temperos e Condimentos -->
+                            <div class="menu-category__col">
+                                <h3 class="menu-category__title">
+                                    <a href="/alimento/mercearia-basica">Mercearia Básica</a>
+                                </h3>
+  
+                                 <!-- Categorias temperos-e-condimentos-->
+                        
+                                 <ul class="menu-sub-category__list"> 
+                                    
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/mercearia-basica/arroz" class="menu-sub-category__link">Arroz</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/mercearia-basica/enlatados" class="menu-sub-category__link">Enlatados</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/mercearia-basica/farinha" class="menu-sub-category__link">Farinha</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/mercearia-basica/graos" class="menu-sub-category__link">Grãos</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/mercearia-basica/macarrao" class="menu-sub-category__link">Macarão</a>
+                                    </li>
+                                    <li class="menu-sub-category__item" onmouseover="this.style.textShadow='0.1em 0.1em 0.2em Gold'" onmouseout="this.style.textShadow='none'">
+                                        <a href="/alimento/mercearia-basica/pipoca" class="menu-sub-category__link">Pipoca</a>
+                                    </li>
+                                  
+                                    
+                                    <li class="menu-sub-category__item menu-sub-category__item--all-subs">
+                                        <a href="/alimento/mercearia-basica/" class="menu-sub-category__link menu-sub-category__link--all-subs">
+                                            <span>Tudo em Mercearia Básica</span>
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+  
+                            </div>
+                            
+  
+                        </div>
+  
+                        <div class="menu-category__footer">
+                            <a href="/alimento/" class="menu-category__link">Tudo de
+                                <span>Alimentos</span>
+                            </a>
+                        </div>
+                    </div>
+  
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+  
+            </nav>
+        </div>
+  
+        <!-- linha de Departamentos -->
+        <ul class="header-departament-line__list" >
+            <!-- linha de DEP - Filmes e Séries -->
+            
+            <li class="header-departament-line__item-box header-departament-line__item-box--livros">
+                <a href="/livros/" class="header-departament-line__title">Livros</a>
+            </li>
+            
+            <li class="header-departament-line__item-box header-departament-line__item-box--filmes">
+                <a href="/filmes-e-series/" class="header-departament-line__title">Filmes e Séries</a>
+            </li>
+  
+            <!-- linha de DEP - Consoles e Games -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--games">
+                <a href="/consoles-e-games/" class="header-departament-line__title">Consoles e Games</a>
+            </li>
+            
+            <!-- linha de DEP - Eletrônicos -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--eletronicos">
+                <a href="/eletronicos/" class="header-departament-line__title">Eletrônicos</a>
+            </li>
+  
+            <!-- linha de DEP - Telefonia -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--telefonia">
+                <a href="/telefonia/" class="header-departament-line__title">Telefonia</a>
+            </li>
+  
+            <!-- linha de DEP - Embalagens e Mídia -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--midia">
+                <a href="/embalagens-e-midias/" class="header-departament-line__title">Embalagens e Mídia</a>
+            </li>
+            
+            
+            <!-- linha de DEP - Informatica -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--informatica">
+                <a href="/informatica/" class="header-departament-line__title">Informatica</a>
+            </li>
+  
+             <!-- linha de DEP - Música -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--musica">
+                <a href="/musica/" class="header-departament-line__title">Música</a>
+            </li>
+            
+            <!-- linha de DEP - Utilidades Domésticas -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--utilidades-domesticas">
+                <a href="/utilidades-domesticas/" class="header-departament-line__title">Utilidades Domésticas</a>
+            </li>
+            
+            <!-- linha de DEP - Higiene e Limpeza -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--higiene-limpeza">
+                <a href="/higiene-e-limpeza/" class="header-departament-line__title">Higiene e Limpeza</a>
+            </li>
+  
+            <!-- linha de DEP - Alimento -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--alimento">
+                <a href="/alimento/" class="header-departament-line__title">Alimentos</a>
+            </li>
+            
+            <!-- linha de DEP - Copa -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--copa">
+                <a href="/bebidas/" class="header-departament-line__title">Bebidas</a>
+            </li>
+            
+            <!-- linha de DEP - Variedades -->
+            <li class="header-departament-line__item-box header-departament-line__item-box--variedades">
+                <a href="/variedades/" class="header-departament-line__title">Variedades</a>
+            </li>
+  
+        </ul>
+    </div>
+  </header>
