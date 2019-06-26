@@ -3,3 +3,7 @@
 .ajax-content-loader {
   display: none !important;
 }
+
+body{
+  background-color: white;
+}
