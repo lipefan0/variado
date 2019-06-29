@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="pt-br">
+
+<head>
+    <title></title>
+    <vtex:metaTags/>
+    <vtex:template id="vrd-dev-metatags" />
+    <vtex:template id="vrd-dev-styles" />
+</head>
+
+<style>
+    .zoomPad {
+        position: relative;
+        float: left;
+        z-index: 99;
+        cursor: crosshair
+    }
+
+    .zoomPreload {
+        -moz-opacity: .8;
+        opacity: .8;
+        filter: alpha(opacity=80);
+        color: #333;
+        font-size: 12px;
+        font-family: Tahoma;
+        text-decoration: none;
+        border: 1px solid #CCC;
+        background-color: #fff;
+        padding: 8px;
+        text-align: center;
+        background-image: url(/arquivos/ajax-loader.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 110;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .zoomPup {
+        overflow: hidden;
+        background-color: #FFF;
+        -moz-opacity: .6;
+        opacity: .6;
+        filter: alpha(opacity=60);
+        z-index: 120;
+        position: absolute;
+        border: 1px solid #CCC;
+        z-index: 101;
+        cursor: crosshair
+    }
+
+    .zoomOverlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #FFF;
+        z-index: 5000;
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 101
+    }
+
+    .zoomWindow {
+        position: absolute;
+        left: 445px !important;
+        top: 40px;
+        background: #FFF;
+        z-index: 6000;
+        height: auto;
+        z-index: 10000;
+        z-index: 110;
+    }
+
+    .zoomWrapper {
+        position: relative;
+        border: 1px solid #999;
+        z-index: 110;
+        width: 531px !important;
+        height: 400px !important;
+    }
+
+    .zoomWrapperTitle {
+        display: block;
+        background: #999;
+        color: #FFF;
+        height: 18px;
+        line-height: 18px;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        font-size: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 120;
+        -moz-opacity: .6;
+        opacity: .6;
+        filter: alpha(opacity=60)
+    }
+
+    .zoomWrapperImage {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        z-index: 110;
+        height: 400px !important;
+    }
+
+    .zoomWrapperImage img {
+        border: 0;
+        display: block;
+        position: absolute;
+        z-index: 101
+    }
+
+    .zoomIframe {
+        z-index: -1;
+        filter: alpha(opacity=0);
+        -moz-opacity: .8;
+        opacity: .8;
+        position: absolute;
+        display: block
+    }
+</style>
+
+<body style="background-color: white">
+    <vtex.cmc:productRichSnippets showGoogle="1" />
+    <vtex:template id="bm-header" />
+
+    <section class="container-fluid product-page__container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-xl-12">
+                    <div class="features-top-product">
+                        
+                    </div>
+                    <div class="product">
+                        <div class="global-breadcrumb">
+                            <vtex.cmc:breadCrumb />
+                            <span class="breadcrumb-page">
+                                <vtex.cmc:productName/>
+                            </span>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-img__box">
+                                <vtex.cmc:ProductImage zoom="on" />
+                                <li class="monta-video d-none">x</li>
+                                <div class="social-box">
+                                    <vtex.cmc:facebookLike />
+                                </div>
+                            </div>
+    
+                            <div class="product-sell-info__box">
+    
+                                <div class="product-name">
+                                    <h1 itemprop="name">
+                                        <vtex.cmc:productName/>
+                                    </h1>
+                                    <a href="#title-avaliacao" class="avaliacao-box-title">
+                                        <vtex.cmc:evaluationRate/>
+                                    </a>
+                                </div>
+    
+                                <div class="product-price__box">
+                                    <div class="product-price__box--col">
+                                        <div class="product-price__box--content">
+                                            <div class="product-price__sku-value">
+                                                <p class="product-price">
+                                                    <meta itemprop="priceCurrency" content="BRL" />
+                                                    <vtex.cmc:skuPrice/>
+                                                </p>
+                                            </div>
+                                            <div class="product-price__other-method">
+                                                <vtex.cmc:OtherPaymentMethod/>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="product-price__box--col">
+                                        <div class="product-price__box--content">
+                                            <div class="product-quantity-selector__box">
+                                                <vtex.cmc:stockKeepingUnitAmountAndUnitSelection />
+                                            </div>
+                                            <div class="product-buy-btn__box">
+                                                <vtex.cmc:BuyButton/>
+                                                <!-- <vtex.cmc:BuyInPage/> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="product-price__sku-selector">
+                                    <vtex.cmc:skuSelection />
+                                </div>
+    
+                                <div class="product-shipping-box">
+                                    <vtex.cmc:shippingValue/>
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            ShippingValue();
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_accessory">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Acessorios" />
+                        </div>
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+    
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_suggestions">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Sugestoes" />
+                        </div>
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+
+    <section class="container product-description__container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-10 col-xl-12">
+                <div class="product-description__box">
+                    <h2 id="title-descricao" class="product-description__box--title">Descrição</h2>
+                    <div id="descricao" itemprop="description" class="product-description__content active">
+                        <vtex.cmc:ProductDescription/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_sales">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Colecao-Promocoes" />
+                        </div>
+                        <vtex:contentPlaceHolder id="Colecao-Promocoes-Botao" />
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_release">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Colecao-Lancamentos" />
+                        </div>
+                        <vtex:contentPlaceHolder id="Colecao-Lancamentos-Botao" />
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+
+    <section class="container product-description__container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-10 col-xl-12">
+                <div class="product-specitication__box">
+                    <h2 id="title-fichaTecnica" class="product-description__box--title">Ficha técnica</h2>
+                    <div id="fichaTecnica" class="product-description__content active">
+                        <vtex.cmc:productSpecification/>
+                        <vtex.cmc:stockKeepingUnitMeasures/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_category">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Colecao-Categorias" />
+                        </div>
+                        <vtex:contentPlaceHolder id="Colecao-Categorias-Botao" />
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+    
+    <section class="container product-description__container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-10 col-xl-12">
+                <div class="product-detals__box">
+                    <h2 id="title-avaliacao" class="product-description__box--title">Avaliações</h2>
+                    <div id="avaliacao" class="product-description__content active">
+                        <vtex.cmc:UserReview/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_navegacao_usuario">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Voce-visualizou-recentemente" />
+                        </div>
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+    
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_quemviu_viutbm">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
+                        </div>
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+    
+    <section class="container product-too__container" style="display:none">
+            <div class="row justify-content-center">
+                <!-- CLUSTER LARGE -->
+                <div class="cluster-box cluster-box__large cluster-box__collection_quemcomprou_comproutbm">
+                    <div class="cluster-content">
+                        <div class="flexslider flex-second-cluster">
+                            <vtex:contentPlaceHolder id="Quem-comprou-comprou-tambem" />
+                        </div>
+                    </div>
+                </div>
+                <!-- CLUSTER LARGE -->
+            </div>
+    </section>
+    
+    <vtex.cmc:navigationHistory/>
+
+    <vtex:template id="vrd-dev-footer" />
+    <vtex:template id="vrd-dev-scripts" />
+    <script src="/arquivos/variado-product.min.js"></script>
+
+</body>
+
+</html>
