@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="pt-br">
+
+<head>
+    <title></title>
+    <vtex:metaTags/>
+    <vtex:template id="vrd-dev-metatags" />
+    <vtex:template id="vrd-dev-styles" />
+</head>
+
+<body>
+    <vtex:template id="vrd-dev-header" />
+
+    <section class="catalog__header">
+        <vtex:contentPlaceHolder id="departamentBannerPrincipal" />
+        <vtex.cmc:searchTitle />
+        <div class="catalog__description"><vtex.cmc:CatalogDescription /></div>
+    </section>
+
+    <section class="container-fluid catalog-container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+
+                <div class="catalog__pre-filter">
+                </div>
+
+                <div class="catalog__products">
+
+                    <div class="catalog__products-filters">
+                        <p class="catalog__products-filters-title">Filtros</p>
+                        <vtex.cmc:singleDepartmentNavigator/>
+                    </div>
+
+                    <div class="catalog__products-shelfs">
+                        <vtex.cmc:searchResult layout="025b2e68-5b71-4a15-a133-a375f87d9999" itemCount="20" columnCount="4" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <vtex:template id="vrd-dev-footer" />
+    <vtex:template id="vrd-dev-scripts" />
+    <script src="/arquivos/variado-catalog.min.js"></script>
+</body>
+
+</html>
