@@ -1,0 +1,75 @@
+<!-- 
+*
+* Desenvolvido por Black Magenta
+* suporte@blackmagenta.com.br
+*
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <title></title>
+    <vtex:metaTags/>
+    <vtex:template id="vrd-dev-metatags" />
+    <link href="/files/vrd-dev-gt-account.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/files/vrd-dev-account.css" rel="stylesheet" type="text/css" />
+    <vtex:template id="vrd-dev-styles" />
+</head>
+
+<body id="account-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="vrd-dev-header" />
+        <!-- /SubTemplate: Header -->
+
+        <!-- content -->
+        <main id="gcontent" class="ext all-account">
+            <div class="center" style="width: 130%; margin-left: -15%;">
+
+                <section class="line header-client">
+                    <h2><span>Minha conta</span></h2>
+                </section>
+
+                <section class="line edit-client">
+                    <!-- dados -->
+                    <div class="col33A client-dados" style="border: none; width: 100%">  
+                        <h4><span class="sprite-ico-meus-dados"></span>Meus dados</h4>        
+                        <vtex.cmc:accountUserProfile />
+                        <vtex.cmc:accountAddress />
+                    </div>
+                    <!-- dados -->
+
+                    <!-- address -->
+                    <!--<div class="col33A client-address">
+                        <h4><span class="sprite-ico-endereco"></span>Meus endereços</h4>
+                        <vtex.cmc:accountAddress />            
+                    </div>-->
+                    <!-- address -->
+
+                    <!-- order -->
+                   <!-- <div class="col33A client-order">
+                        <h4><span class="sprite-ico-sacola-account"></span>Meus pedidos</h4>
+                        <p class="order-link"><a href="/account/orders">Ver meus pedidos</a></p>
+                        <div class="txt-order">Clique no link acima para acompahar seus <br /> pedidos realizados</div>
+                    </div>-->
+                    <!-- order -->
+                </section>
+                <!--<div class="logout-box"><a href="/logout" class="logout-link">Sair da sua conta</a></div>-->
+
+            </div>      
+        </main>
+        <!-- content -->
+                
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="vrd-dev-footer" />
+        <vtex:template id="vrd-dev-scripts" />
+        <script data-main="/arquivos/bm-account" src="/files/vrd-dev-require.js"></script>
+        <!-- /SubTemplate: Footer -->
+    
+    </div><!-- .container-fluid -->
+
+</body>
+</html>
